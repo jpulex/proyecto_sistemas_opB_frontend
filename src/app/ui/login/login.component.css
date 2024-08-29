@@ -1,0 +1,62 @@
+.container-login{
+  width:25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.svg-images svg{
+  margin: 1rem;
+  color: white;
+}
+
+.svg-images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  background: #2c3e50;  /* fallback for old browsers */
+
+  box-shadow: 10px 12px 24px -5px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 12px 24px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 12px 24px -5px rgba(0,0,0,0.75);
+}
+
+
+.card-title{
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.card-body{
+  padding: 0;
+}
+
+
+/* Tamaño de texto para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+  .container-login{
+    width: 50%;
+  }
+}
+
+/* Tamaño de texto para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .container-login{
+    width: 60%;
+  }
+}
+
+/* Tamaño de texto para pantallas extra pequeñas (móviles muy pequeños) */
+@media (max-width: 480px) {
+  .container-login{
+    width: 70%;
+  }
+}
