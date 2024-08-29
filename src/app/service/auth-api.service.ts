@@ -3,6 +3,7 @@ import { BaseApiService } from './base-api.service';
 import { UserRequest } from '../entity/UserRequest';
 import { Observable } from 'rxjs';
 import { jwtDecode } from "jwt-decode";
+import { UserEntity } from '../entity/UserEntity';
 
 @Injectable({
   providedIn: 'root',
@@ -19,6 +20,10 @@ export class AuthApiService extends BaseApiService {
 
   login(body: UserRequest): Observable<any> {
     return this.postToken(`noauth/login`, body);
+  }
+
+  register(body: UserEntity): Observable<any> {
+    return this.postToken(`noauth/register`, body);
   }
 
   logout() {

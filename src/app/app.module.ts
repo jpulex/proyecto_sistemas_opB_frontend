@@ -9,6 +9,7 @@ import { HomeComponent } from './ui/home/home.component';
 import { NavbarComponent } from './ui/navbar/navbar.component';
 import { LoginComponent } from './ui/login/login.component';
 import { UserComponent } from './ui/user/user.component';
+import { RegisterComponent } from './ui/register/register.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { UserComponent } from './ui/user/user.component';
     NavbarComponent,
     LoginComponent,
     UserComponent,
+    RegisterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [
