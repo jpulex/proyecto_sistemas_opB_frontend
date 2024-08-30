@@ -6,12 +6,16 @@ import { UserComponent } from './ui/user/user.component';
 import { AuthGuard } from './auth/auth.guard';
 import { AuthenticatedGuard } from './auth/AuthenticatedGuard';
 import { RegisterComponent } from './ui/register/register.component';
+import { PerfilComponent } from './ui/perfil/perfil.component';
+import { ArticlesComponent } from './ui/articles/articles.component';
 
 const routes: Routes = [
   {path:"home",component:HomeComponent, canActivate: [AuthGuard]},
   {path:"login",component:LoginComponent, canActivate: [AuthenticatedGuard]},
   {path:"register",component:RegisterComponent, canActivate: [AuthenticatedGuard]},
   {path:"users",component:UserComponent, canActivate: [AuthGuard]},
+  {path:"perfil",component:PerfilComponent, canActivate: [AuthGuard]},
+  {path:"articles",component:ArticlesComponent, canActivate: [AuthGuard]},
   { path: '**', redirectTo: '/home' }
 ];
 
