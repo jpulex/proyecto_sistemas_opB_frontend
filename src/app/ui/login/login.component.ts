@@ -10,25 +10,13 @@ import Swal from 'sweetalert2';
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
 })
-export class LoginComponent implements AfterViewInit,OnInit {
+export class LoginComponent{
   userRequest: UserRequest;
   validButton:boolean = false;
   public myProperty: boolean = false;
 
   constructor(private authService: AuthApiService, public router: Router,private cdr: ChangeDetectorRef) {
     this.userRequest = new UserRequest();
-  }
-
-
-  ngAfterViewInit() {
-    setTimeout(() => {
-      this.myProperty = true;
-      this.cdr.detectChanges();
-    }, 0);
-  }
-
-  ngOnInit() {
-
   }
 
   login() {

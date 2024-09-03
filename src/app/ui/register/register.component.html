@@ -17,29 +17,50 @@
         </div>
 
         <div class="card-body">
-          <h5 class="card-title text-center">Login</h5>
+          <h5 class="card-title text-center">Registrarse</h5>
           <div class="container text-center inputs-container">
             <div class="row">
               <div class="col">
+
+                <div class="input-group flex-nowrap input">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-describedby="addon-wrapping"
+                    [(ngModel)]="userRequest.name" (input)="onChangeValues()" />
+                </div>
+                <br />
+
+                <div class="input-group flex-nowrap input">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-describedby="addon-wrapping"
+                    [(ngModel)]="userRequest.lastname" (input)="onChangeValues()" />
+                </div>
+                <br />
+
+                <div class="input-group flex-nowrap input">
+                  <input type="text" class="form-control" placeholder="Correo" aria-describedby="addon-wrapping"
+                    [(ngModel)]="userRequest.email" (input)="onChangeValues()" />
+                </div>
+                <br />
+
                 <div class="input-group flex-nowrap input">
                   <input type="text" class="form-control" placeholder="Nombre de Usuario" aria-describedby="addon-wrapping"
                     [(ngModel)]="userRequest.username" (input)="onChangeValues()" />
                 </div>
                 <br />
+
                 <div class="input-group flex-nowrap input">
                   <input type="password" class="form-control" placeholder="Contraseña" aria-describedby="addon-wrapping"
                     [(ngModel)]="userRequest.password" (input)="onChangeValues()" />
                 </div>
+
               </div>
             </div>
 
             <div class="d-grid gap-2 col-6 mx-auto mb-4">
-              <button type="button" class="btn btn-primary mt-3" [disabled]="!validButton" (click)="login()">
+              <button type="button" class="btn btn-primary mt-3" [disabled]="!validButton" (click)="registerUser()">
                 Aceptar
               </button>
             </div>
 
-            <button type="button" class="btn btn-link" [routerLink]="['/register']">Registrarse -></button>
+            <button type="button" class="btn btn-link" [routerLink]="['/login']"> <- Logearse</button>
           </div>
         </div>
       </div>
