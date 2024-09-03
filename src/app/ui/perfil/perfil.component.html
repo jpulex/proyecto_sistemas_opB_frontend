@@ -1,0 +1,43 @@
+<div class="container-login">
+  <div class="card">
+    <div class="card-img-top svg-images">
+      <div style="width: 9rem; height: 9rem">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            fill="#07204b"
+            d="M256 288c79.5 0 144-64.5 144-144S335.5 0 256 0 112 64.5 112 144s64.5 144 144 144zm128 32h-55.1c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16H128C57.3 320 0 377.3 0 448v16c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48v-16c0-70.7-57.3-128-128-128z"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title text-center" style="text-transform: uppercase">
+        {{ username }}
+      </h5>
+      <div class="container text-center inputs-container">
+        <ul class="list-group list-group-flush list_info">
+          <li class="list-group-item"><span>Nombre: </span> Soni</li>
+          <li class="list-group-item"><span>Apellido: </span> Soni</li>
+          <li class="list-group-item"><span>Email: </span> Soni</li>
+          <li class="list-group-item"><span>Usuario: </span>  {{ username }}</li>
+        </ul>
+
+        <div class="row">
+          <div class="col">
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button type="button" class="btn btn-primary mt-3">Editar</button>
+            </div>
+
+          </div>
+          <div class="col">
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button type="button" class="btn btn-danger mt-3">Eliminar</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

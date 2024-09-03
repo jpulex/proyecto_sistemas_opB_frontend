@@ -13,7 +13,9 @@ export class UserComponent {
   constructor(private serviceUser: UserApiService){
     this.user = new UserEntity();
   }
+
   usersList: UserEntity[] = [];
+
   ngOnInit(): void {
     this.getAllServiceUsers()
   }
@@ -22,8 +24,10 @@ export class UserComponent {
     this.serviceUser.getAllUsers().subscribe((res) => {
       this.usersList = res
     });
+  }
 
-
+  disableROl(user:UserEntity):boolean{
+      return user.rol == "USER"
   }
 
 }

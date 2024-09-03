@@ -9,6 +9,9 @@ import { HomeComponent } from './ui/home/home.component';
 import { NavbarComponent } from './ui/navbar/navbar.component';
 import { LoginComponent } from './ui/login/login.component';
 import { UserComponent } from './ui/user/user.component';
+import { RegisterComponent } from './ui/register/register.component';
+import { ArticlesComponent } from './ui/articles/articles.component';
+import { PerfilComponent } from './ui/perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import { UserComponent } from './ui/user/user.component';
     NavbarComponent,
     LoginComponent,
     UserComponent,
+    RegisterComponent,
+    ArticlesComponent,
+    PerfilComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [

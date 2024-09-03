@@ -20,3 +20,14 @@
   height: 50px;
   margin-right: 0.3rem;
 }
+
+h1{
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+body{
+  background-color: rgb(208, 211, 214);
+}
+

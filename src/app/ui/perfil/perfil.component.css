@@ -4,9 +4,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  box-shadow: -34px 23px 23px -9px rgba(0,0,0,0.44);
-  -webkit-box-shadow: -34px 23px 23px -9px rgba(0,0,0,0.44);
-  -moz-box-shadow: -34px 23px 23px -9px rgba(0,0,0,0.44);
+  box-shadow: -11px 10px 5px -2px rgba(0,0,0,0.35);
+  -webkit-box-shadow: -11px 10px 5px -2px rgba(0,0,0,0.35);
+  -moz-box-shadow: -11px 10px 5px -2px rgba(0,0,0,0.35);
 
 }
 
@@ -20,13 +20,24 @@
   align-items: center;
 }
 
+.list-group-item{
+  text-align: left;
+}
+
+.list-group-item span{
+  font-weight: bold;
+}
+
 .card{
-  background: #bdc3c7;
+  background: #ffffff;
   padding: 2rem;
   border-radius: 0rem 0.375rem 0.375rem 0rem;
   border: 0 !important;
 }
 
+.list_info{
+  margin: 2rem;
+}
 
 .card-title{
   font-family: "Nerko One", cursive;
